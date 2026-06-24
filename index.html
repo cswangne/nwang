@@ -53,9 +53,9 @@
             color: #1a73e8;
             text-decoration: none;
         }
-        /* .header-info .contact a:hover {
+        .header-info .contact a:hover {
             text-decoration: underline;
-        } */
+        }
         /* ============================================ */
         .content {
             max-width: 900px;
@@ -99,6 +99,9 @@
             color: blue;
         }
 		.content p a { color: #1a73e8; }      /* 只管 .content 区域里、<p>段落里的链接 → About Me 的链接 */
+		.content p a:hover {
+            text-decoration: underline;
+        }
 		.header-info .contact a { color: #1a73e8; }   /* 只管头部联系方式里的链接 → DBLP */
 		/* .publication-title { color: #6a1b9a; }        /* 只管带 class="publication-title" 的链接 → 论文标题 */ */
     </style>
@@ -198,7 +201,7 @@
 <ul class="publication-list">
 	<li>
         <a href="#" class="publication-title">Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing</a>
-        <span class="author-info">Mingjin Zhang, Jiannong Cao, Tao Wu, Xiangchun Chen, and <strong>Ne Wang</strong></span>
+        <span class="author-info">Mingjin Zhang, Jiannong Cao*, Tao Wu, Xiangchun Chen, and <strong>Ne Wang</strong></span>
         <span class="journal-info">International Conference on Distributed Computing Systems (ICDCS), 2026.</span>
 	<span class="ccf-b">(CCF B)</span>
     </li>
