@@ -10,21 +10,55 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #fff;
+            color: #222;
         }
+        /* ===== 新的 header：左侧方形头像 + 右侧信息 ===== */
         header {
-            background: #4682B4;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
+            display: flex;
+            align-items: flex-start;
+            gap: 28px;
+            max-width: 900px;
+            margin: 40px auto 10px;
+            padding: 0 20px;
+            background: none;        /* 去掉蓝色背景 */
+            color: #222;             /* 文字改深色 */
+            text-align: left;
         }
         header img {
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            margin-bottom: 10px;
+            width: 170px;
+            height: auto;
+            border-radius: 4px;      /* 方形带一点圆角；想要纯方形改成 0 */
+            object-fit: cover;
+            margin: 0;
+            flex-shrink: 0;
         }
+        .header-info h1 {
+            margin: 0 0 8px;
+            font-size: 1.7em;
+            color: #222;
+        }
+        .header-info .title {
+            margin: 0 0 14px;
+            color: #333;
+            font-size: 1em;
+        }
+        .header-info .contact {
+            margin: 5px 0;
+            color: #444;
+            font-size: 0.95em;
+        }
+        .header-info .contact a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .header-info .contact a:hover {
+            text-decoration: underline;
+        }
+        /* ============================================ */
         .content {
+            max-width: 900px;
+            margin: 0 auto;
             padding: 20px;
         }
         h2 {
@@ -41,7 +75,6 @@
         }
         .publication-list li {
             margin-bottom: 15px;
-            
         }
         .publication-title {
             color: #6a1b9a; /* Purple */
@@ -53,17 +86,17 @@
         .journal-info {
         }
         .author-info {
-	    display: block;
+            display: block;
         }
-	strong {
-    	    font-weight: bold; 
-	}
-	.ccf-a {
-            color: red; 
-	}
-	.ccf-b {
-    	    color: blue; 
-	}
+        strong {
+            font-weight: bold;
+        }
+        .ccf-a {
+            color: red;
+        }
+        .ccf-b {
+            color: blue;
+        }
     </style>
 </head>
 <body>
@@ -88,13 +121,6 @@
         <p>I am currently an associate professor in the School of Information at Huazhong Agricultural University. I was a Post-Doctoral Fellow at Hong Kong University of Science and Technology, advised by Prof. <a href="https://www.cse.ust.hk/~bli/">Bo Li</a> and Prof. <a href="https://shaohuais.github.io/">Shaohuai Shi</a> from 2023-2024. I was also a Post-Doctoral Fellow at Hong Kong Polytechnic University, advised by Prof. <a href="https://www4.comp.polyu.edu.hk/~csjcao/">Jiannong Cao</a> from 2024-2025. I received my Bachelor and Master degrees from Wuhan University of Technology in 2016 and 2019; and my PhD degree from Wuhan University in 2023, advised by Prof. <a href="https://ruitingzhou.wordpress.com/">Ruiting Zhou</a> and Prof. <a href="https://www.insc.tsinghua.edu.cn/inscen/info/1255/1104.htm">Zongpeng Li</a>.</p>
     	<p>I am now looking for graduate students and intern students who are interested in machine learning system, LLM training and inference, distributed learning, cloud/edge computing. If you have interests, feel free to contact me.</p>
     </section>
-
-    <!-- <section class="contact">
-        <h2>Contact</h2>
-        <p>Office: 第一综合楼B座Room 303</p>
-        <p>Email: <a href="mailto:ne.wang@mail.hzau.edu.cn">ne.wang@mail.hzau.edu.cn</a> or <a href="mailto:ne.wang@whu.edu.cn">ne.wang@whu.edu.cn</a></p>
-        <p>I am now looking for graduate students and intern students who are interested in machine learning system, LLM training and inference, distributed learning, cloud/edge computing. If you have interests, feel free to contact me.</p>
-    </section> -->
 
     <section class="research">
         <h2>Research Interests</h2>
