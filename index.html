@@ -98,12 +98,14 @@
         .ccf-b {
             color: blue;
         }
-		.content p a { color: #1a73e8; }      /* 只管 .content 区域里、<p>段落里的链接 → About Me 的链接 */
+		.content p a { 
+			color: #1a73e8; 
+			text-decoration: none;
+		}      /* 只管 .content 区域里、<p>段落里的链接 → About Me 的链接 */
 		.content p a:hover {
             text-decoration: underline;
         }
 		.header-info .contact a { color: #1a73e8; }   /* 只管头部联系方式里的链接 → DBLP */
-		/* .publication-title { color: #6a1b9a; }        /* 只管带 class="publication-title" 的链接 → 论文标题 */ */
     </style>
 </head>
 <body>
@@ -114,7 +116,7 @@
         <h1>Ne Wang (王讷)</h1>
         <p class="title">Associate Professor, School of Information, Huazhong Agricultural University</p>
         <p class="contact">📍 第一综合楼B座Room 303, College of Informatics, Huazhong Agricultural University, Wuhan, China</p>
-        <p class="contact">✉️ Email: your-email@mail.hzau.edu.cn</p>
+        <p class="contact">✉️ Email: ne.wang@mail.hzau.edu.cn</p>
         <!-- <p class="contact">
             <a href="https://dblp.org/pid/236/3200.html"><i class="fa-book"></i> DBLP</a> &nbsp;|&nbsp;
             <a href="你的GoogleScholar链接">Google Scholar</a>
